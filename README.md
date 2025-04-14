@@ -70,17 +70,27 @@ graph LR
    ```
 
 2. **Start the services in order**
+
+   > ⚠️ **Important**: The services must be started in the following order to ensure proper network and dependency initialization.
+
+   a. **Start the Gateway service first** (creates required network and Kafka broker)
    ```bash
-   # Start the gateway service first
    cd fc-pay-gateway
+   cp .env.example .env
    docker-compose up -d
+   ```
 
-   # Start the antifraud service
+   b. **Start the Antifraud service** (depends on Kafka from Gateway)
+   ```bash
    cd ../fc-pay-antifraud
+   cp .env.example .env
    docker-compose up -d
+   ```
 
-   # Start the web interface
+   c. **Start the Web interface** (depends on Gateway API)
+   ```bash
    cd ../fc-pay-web
+   cp .env.example .env
    docker-compose up -d
    ```
 
@@ -95,6 +105,11 @@ graph LR
    # Check web interface
    curl http://localhost:3000
    ```
+
+4. **Access the application**
+   - Web Interface: http://localhost:3000
+   - Gateway API: http://localhost:8080
+   - Antifraud Service: http://localhost:3001
 
 ## Development Setup
 
