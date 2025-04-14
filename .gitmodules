@@ -1,0 +1,9 @@
+[submodule "fc-pay-web"]
+	path = fc-pay-web
+	url = git@github.com:brunownk/fc-pay-web.git
+[submodule "fc-pay-gateway"]
+	path = fc-pay-gateway
+	url = git@github.com:brunownk/fc-pay-gateway.git
+[submodule "fc-pay-antifraud"]
+	path = fc-pay-antifraud
+	url = git@github.com:brunownk/fc-pay-antifraud.git
