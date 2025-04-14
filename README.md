@@ -1,14 +1,24 @@
 # FC Pay - Payment Gateway System
 
-A modern payment gateway system built with microservices architecture, featuring real-time fraud detection and asynchronous communication.
+A study project implementing a simple payment gateway system with microservices architecture, focusing on learning modern development practices.
 
 ## Components
 
-- **Web Interface** ([fc-pay-web](fc-pay-web)) - Next.js frontend for payment management
-- **Payment Gateway** ([fc-pay-gateway](fc-pay-gateway)) - Go backend for payment processing
-- **Fraud Detection** ([fc-pay-antifraud](fc-pay-antifraud)) - NestJS service for real-time fraud analysis
+- **Web Interface** ([fc-pay-web](https://github.com/brunownk/fc-pay-web)) - Next.js frontend for payment management
+- **Payment Gateway** ([fc-pay-gateway](https://github.com/brunownk/fc-pay-gateway)) - Go backend for payment processing
+- **Fraud Detection** ([fc-pay-antifraud](https://github.com/brunownk/fc-pay-antifraud)) - NestJS service for basic fraud analysis
 
-## Architecture
+## Study Focus
+
+This project is designed for learning purposes, focusing on:
+- Microservices architecture
+- Event-driven communication
+- Modern web development with Next.js
+- Backend development with Go
+- Service development with NestJS
+- Basic payment processing concepts
+
+## Tech Stack
 
 - **Frontend**: Next.js with TypeScript
 - **Backend**: Go with PostgreSQL
